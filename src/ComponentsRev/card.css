@@ -1,0 +1,12 @@
+.ratings {
+    display: flex;
+    text-align: center;
+}
+
+.starImg {
+    height: 40px;
+}
+
+.cardImg {
+    border-radius: 10px ;
+}
