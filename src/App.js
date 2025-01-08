@@ -9,15 +9,18 @@ import Data from './ComponentsRev/data'
 
 const App = () => {
   const ele = Data.map(function(item){
-    return <Card 
+    return <Card
+    key = {item.id} 
     pic = {item.coverImg}
     rating = {item.rating}
     reviewCount = {item.reviewCount}
     title = {item.description}
     price = {item.price}
     country = {item.location}
-
+    openSpots = {item.openSpots}
     />
+    
+    // <Card  item = {item} /> ==> in child file, i can use as props.item.nameintheAPI
   })
   return (
     <div>
